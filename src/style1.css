@@ -1,0 +1,367 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+}
+
+/* /// Header section css  */
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+.searchbar {
+  display: flex;
+  margin-top: 30px;
+  width: 50%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+.menubar {
+  text-decoration: none;
+  text-decoration: none;
+}
+.menubar li {
+  display: inline-block;
+  padding: 5px;
+}
+.menubar li .nav-link {
+  color: white;
+  position: relative;
+}
+
+.menubar li .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background: white;
+  top: 100%;
+  left: 15%;
+}
+.menubar li .nav-link:hover::after {
+  width: 80%;
+  transition: 0.4s ease;
+}
+
+.logo {
+  color: white;
+}
+
+/* // header data section  */
+.slogan {
+  color: white;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.slogan button {
+  color: white;
+}
+.slogan h1 {
+  font-size: 40px;
+}
+
+/* /// Cities boxes section */
+.cities {
+  margin-top: 100px;
+}
+
+.cities_wrapper {
+  width: 90%;
+  padding: 10px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.city_box {
+  max-width: 370px;
+  width: 370px;
+  background-image: url("./images/khyber.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 380px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.city_box:hover {
+  color: white;
+}
+
+.city_box:nth-child(2) {
+  background-image: url("./images/karachi.jpg");
+}
+
+.city_box:nth-child(3) {
+  background-image: url("./images/lahore.jpg");
+}
+
+.city_box:nth-child(4) {
+  background-image: url("./images/sialkot.jpg");
+}
+.city_box:nth-child(5) {
+  background-image: url("./images/islamabad.jpg");
+}
+.city_box:nth-child(6) {
+  background-image: url("./images/peshawar.jpg");
+}
+
+/* // khyber page css section */
+
+.house_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.house_box {
+  max-width: 270px;
+  margin: 10px;
+  width: 270px;
+  border-radius: 10px;
+  box-shadow: 4px 7px 14px lightgrey;
+}
+.house_box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.housedata {
+  padding: 10px 20px;
+}
+.housedata button {
+  margin: 0 auto;
+}
+.housedata * {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* // sign up page section */
+.signup {
+  background-image: url("./images/b4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+.signup_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+.tabs_box {
+  background-image: url("./images/m.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.tabs_wrapper {
+  width: 30%;
+  background: white;
+  height: 100%;
+  margin-right: -10px;
+}
+
+.tabbox,
+#tab1,
+#tab2,
+#tab3 {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  font-size: 17px;
+}
+.active {
+  background: rgb(29, 156, 29);
+  color: white !important;
+  transform: scale(1.1,1.1);
+  border-radius: 5px;
+  box-shadow: 0px 3px  3px grey;
+}
+ 
+.tabbox i {
+  font-size: x-large;
+}
+
+.form {
+  padding: 5px;
+  background-color: #eeeeee;
+  display: flex;
+  margin-bottom: 15px;
+  font-weight: lighter;
+}
+.form button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+}
+
+.content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
+/* //ABOUT PAGE SECTION */
+.abouttext {
+  padding-bottom: 40px;
+}
+
+.togglebtn {
+  cursor: pointer;
+  font-size: x-large;
+  display: none;
+}
+
+/* //Footermenu css section */
+.footer .footerbox {
+  color: white;
+  text-align: center;
+}
+.footermenu .nav-link {
+  color: white;
+  font-size: 18px;
+  opacity: 0.6;
+}
+.footermenu .nav-link:hover {
+  color: white;
+  opacity: 1;
+}
+.footerbox h3,
+p {
+  opacity: 0.6;
+}
+.socialbtn {
+  border: none;
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  margin: 10px 5px;
+  text-align: center;
+  color: white;
+}
+
+/* //MEDIAQUERIES SECTION  */
+
+@media only screen and (max-width: 992px) {
+  .togglebtn {
+    display: block;
+  }
+  .house_box {
+    width: 30% !important;
+  }
+
+  .city_box {
+    width: 46%;
+  }
+  .menubar {
+    background: green;
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    color: black !important;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 40vh;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .slogan {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .house_box {
+    width: 46% !important;
+  }
+
+  .city_box {
+    width: 46%;
+  }
+
+  .searchbar {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .city_box {
+    width: 100%;
+  }
+  .slogan {
+    text-align: center;
+  }
+  .searchbar {
+    width: 90%;
+  }
+  .house_box {
+    width: 100% !important;
+  }
+}
+
+
+
+
+.regist{
+       display: none;
+}
+
+.sliderimg{
+       width: 100%;
+       height: 400px;
+       object-fit: cover;
+}
